@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container">
+            <a class="ms-md-5" href="#">
+                <img src="/images/logo.png" class="img-fluid" height="80" width="140" alt="demo logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-md-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-5 ps-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 ms-3" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- carousel strat -->
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner hero-carousel">
+            <div class="carousel-item active">
+                <img src="/images/carousel/1.jpg" class="d-block w-100 img-fluid" alt="image1">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/carousel/2.jpg" class="d-block w-100 img-fluid" alt="image2">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/carousel/3.jpg" class="d-block w-100 img-fluid" alt="image3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel end -->
+    <div class="container">
+        <!-- hero section -->
+        <div class="row py-5">
+            <div class="col-12 col-md-6"> 
+                <h2 class="sec-title">
+                    About Us
+                </h2>
+                <p class="mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, officiis. Asperiores adipisci
+                    assumenda rerum atque alias mollitia aut architecto quos sequi. Commodi nihil quidem corrupti
+                    facilis molestiae fuga modi architecto!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam atque quasi mollitia odio sit
+                    excepturi quas ut quaerat quia
+                </p>
+                <a href="" class="fw-bold text-decoration-none text-black link-btn">
+                    Read more
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="/images/carousel/2.jpg" class="img-fluid" alt="about us">
+            </div>
+        </div>
+        <!-- end hero section -->
+        <div class="py-5">
+            <p class="text-center fs-2 sec-title">Our Clients</p>
+            <!---->
+            <div class="carousels">
+                <button class='flt-left buttons' onclick="slideRight(this);">
+                    <i class="bi bi-caret-left-fill fs-1" aria-hidden="true"></i>
+                </button>
+                <div class="row-carousel flt-left">
+                    <div class="row-container">
+                        <div class="container-carousel">
+                            <img src="/images/logo.png" class="img-fluid" height="80" width="140" alt="demo logo">
+                        </div>
+                        <div class="container-carousel">
+                            <img src="/images/logo_1.png" class="img-fluid" height="80" width="140" alt="demo logo">
+                        </div>
+                        <div class="container-carousel">
+                            <img src="/images/logo_2.png" class="img-fluid" height="80" width="140" alt="demo logo">
+                        </div>
+                        <div class="container-carousel">
+                            <img src="/images/logo.png" class="img-fluid" height="80" width="140" alt="demo logo">
+                        </div>
+                        <div class="container-carousel">
+                            <img src="/images/logo_3.png" class="img-fluid" height="80" width="140" alt="demo logo">
+                        </div>
+                        <div class="container-carousel">
+                            <img src="/images/logo_1.png" class="img-fluid" height="80" width="140" alt="demo logo">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <button class='flt-left buttons' onclick="slideLeft(this);">
+                    <i class="bi bi-caret-right-fill fs-1" aria-hidden="true"></i>
+                </button>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="section-gallery">
+        <div class="container py-5">
+            <p class="text-center fs-2 sec-title">
+                Our Gallery
+            </p>
+            <div class="row g-4">
+                <div class="col-12 col-md-4 ">
+                    <img src="/images/gallery/photo.jpeg" class="img-fluid overflow-hidden" height="100px" alt="">
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <img src="/images/gallery/photo_2.jpeg" class="img-fluid overflow-hidden" height="100px" alt="">
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <img src="/images/gallery/photo_2.jpeg" class="img-fluid overflow-hidden" height="100px" alt="">
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <img src="/images/gallery/photo_3.jpeg" class="img-fluid overflow-hidden" height="100px" alt="">
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <img src="/images/gallery/photo_4.jpg" class="img-fluid overflow-hidden" height="100px" alt="">
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <img src="/images/carousel/2.jpg" class="img-fluid overflow-hidden" height="100px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- queries section  -->
+    <div class="queries d-md-flex text-center justify-content-center align-items-center py-3 py-md-2">
+        <p class="my-3 fs-5">
+            Have queries on AKALPYA ?
+        </p>
+        <button class="my-btn ms-md-5">
+            Contact us
+        </button>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted"
+        style="background-color: rgb(236, 236, 236) !important" ;>
+        <div class="container text-center text-md-start py-5">
+            <div class="row mt-3 px-lg-5">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <a class="" href="#">
+                        <img src="/images/logo.png" class="img-fluid" height="80" width="140" alt="demo logo">
+                    </a>
+                </div>
+                <div class="col-md-9 col-lg-8 col-xl-9 mx-auto mb-4">
+                    <div class="d-md-flex  justify-content-between">
+                        <div class="">
+                            <!-- Links -->
+                            <p>
+                                <a href="#" class="nav-link">Home</a>
+                            </p>
+                            <p>
+                                <a class="nav-link" href="#">About us</a>
+                            </p>
+                            <p>
+                                <a href="#" class="nav-link">Contact us</a>
+                            </p>
+                        </div>
+                        <div class="mt-4 mt-md-0">
+                            <button class="my-btn">
+                                Download Brochure
+                            </button>
+                        </div>
+                        <div class="d-flex justify-content-between mt-5 mt-md-0">
+                            <h6 class="text-uppercase fw-bold text-black mt-3">
+                                Follow US
+                            </h6>
+                            <div>
+                                <i class="bi bi-facebook ms-4 fs-3 text-black"></i>
+                                <i class="bi bi-twitter ms-4 fs-3 text-black"></i>
+                                <i class="bi bi-linkedin ms-4 fs-3 text-black"></i>
+                                <i class="bi bi-instagram ms-4 fs-3 text-black"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- javaScript -->
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
