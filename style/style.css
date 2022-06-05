@@ -6,7 +6,7 @@
 }
 @media screen and (min-width: 600px) {
     .hero-carousel {
-        height: 400px;
+        height: 500px !important;
     }
 }
 /* section clients */
